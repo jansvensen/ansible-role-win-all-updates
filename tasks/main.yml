@@ -3,7 +3,7 @@
   win_service:
     name: wuauserv
     start_mode: auto
-    state: running
+    state: started
 
 - name: Install all Windows updates and reboot as many times as needed
   ansible.windows.win_updates:
